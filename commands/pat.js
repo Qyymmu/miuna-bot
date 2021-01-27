@@ -11,7 +11,7 @@ module.exports = {
                 const GIF = await neko.sfw.pat();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
-                .setTitle(`${message.author.tag} погладил самого себя`)
+                .setTitle(`${message.author.tag} погладил(а) самого(у) себя`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
@@ -23,7 +23,7 @@ module.exports = {
             const GIF = await neko.sfw.pat();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`${message.author.tag} погладил ${member.user.tag}`)
+            .setTitle(`${message.author.tag} погладил(а) ${member.user.tag}`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
