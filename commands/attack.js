@@ -8,7 +8,7 @@ module.exports = {
         if (!message.guild) return;
             if (message.mentions.members.size === 0) {
             async function no_ping() {
-                const GIF = await neko.sfw.attack();
+                const GIF = await neko.sfw.punch();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
                 .setTitle(`${message.author.tag} напал(а) самого себя`)
@@ -20,7 +20,7 @@ module.exports = {
             if (message.mentions.members.size !== 0) {
             async function ping() {
             const member = message.mentions.members.first();
-            const GIF = await neko.sfw.attack();
+            const GIF = await neko.sfw.punch();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`${message.author.tag} напал(а) ${member.user.tag}`)
