@@ -12,6 +12,7 @@ module.exports = {
         .addField(prefix + 'kiss', 'Поцеловать кого-то')
         .addField(prefix + 'pat', 'Погладить кого-то')
         .addField(prefix + 'slap', 'Ударить кого-то')
+        .addField(prefix + 'attack', 'Напасть на кого-то')
         .addField(prefix + 'tickle', 'Пощекотать кого-то')
         .addField(prefix + 'cuddle', 'Потереться(обнять) кого-то')
         .addField(prefix + 'feed', 'Покормить кого-то')
