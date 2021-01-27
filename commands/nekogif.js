@@ -10,7 +10,7 @@ module.exports = {
             const GIF = await neko.sfw.nekoGif();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`${message.author.tag} вот рандомное гиф`)
+            .setTitle(`${message.author.tag} вот рандомное гиф неко-тян`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
