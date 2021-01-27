@@ -7,7 +7,7 @@ module.exports = {
         const embed = new Discord.MessageEmbed()
         .setColor('#7289DA')
         .setTitle('Комманды для бота')
-        .addField(prefix + 'help', 'Данное сообщние')
+        .addField(prefix + 'help', 'Данное сообщение')
         .addField(prefix + 'hug', 'Обнять кого-то')
         .addField(prefix + 'kiss', 'Поцеловать кого-то')
         .addField(prefix + 'pat', 'Погладить кого-то')
