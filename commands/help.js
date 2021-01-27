@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const { prefix } = require('../config.json');
 
 module.exports = {
-    name: 'commands',
+    name: 'help',
     execute(client, message, args){
         const embed = new Discord.MessageEmbed()
         .setColor('#7289DA')
