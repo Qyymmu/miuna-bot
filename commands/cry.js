@@ -3,7 +3,7 @@ const nekoclient = require('nekos.life');
 const neko = new nekoclient();
 
 module.exports = {
-    name: 'baka',
+    name: 'cry',
     execute(client, message, args){
         if (!message.guild) return;
             async function cry() {
