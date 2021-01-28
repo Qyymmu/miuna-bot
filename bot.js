@@ -20,7 +20,7 @@ for(const file of commandFiles) {
   client.commands.set(command.name, command);
 }
 
-const prefixes = [ "Бот", "ботик", "ботяра", "бот," ];
+const prefixes = [ "m.", "M.", "М.", "м." ];
 
 client.on('message', async message => {
   if (prefixes.some((prefix) => message.content.startsWith(prefix))) {
