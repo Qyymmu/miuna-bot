@@ -19,12 +19,8 @@ for(const file of commandFiles) {
 
   client.commands.set(command.name, command);
 }
-
-const prefixes = [ "m.", "M.", "М.", "м." ];
-
-client.on("message", (message) => {
-  if (prefixes.some((prefix) => message.content.startsWith(prefix))) {
-    message.reply(botChoice[Math.floor(Math.random() * botChoice.length)]);
+client.on('message', async message => {
+  if (message.content.startsWith(`${prefix}`)) {
     let file_name = `${message.content.split(' ')[0].replace(prefix, '')}.js`;
     if(!fs.existsSync('./commands/' + file_name)) return undefined;
     if(fs.existsSync('./commands/' + file_name)) {
