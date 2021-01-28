@@ -19,8 +19,11 @@ for(const file of commandFiles) {
 
   client.commands.set(command.name, command);
 }
+
+const prefixes = [ "Бот", "ботик", "ботяра", "бот," ];
+
 client.on('message', async message => {
-  if (message.content.startsWith(`${prefix}`)) {
+  if (prefixes.some((prefix) => message.content.startsWith(prefix))) {
     let file_name = `${message.content.split(' ')[0].replace(prefix, '')}.js`;
     if(!fs.existsSync('./commands/' + file_name)) return undefined;
     if(fs.existsSync('./commands/' + file_name)) {
