@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const { prefix } = require('./config.json');
+const { prefix2 } = require('./config.json');
 let fs = require('fs');
 const nekoclient = require('nekos.life');
 const neko = new nekoclient();
