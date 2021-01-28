@@ -22,7 +22,7 @@ for(const file of commandFiles) {
 
 const prefixes = [ "m.", "M.", "М.", "м." ];
 
-client.on('message', async message => {
+client.on("message", (message) => {
   if (prefixes.some((prefix) => message.content.startsWith(prefix))) {
     let file_name = `${message.content.split(' ')[0].replace(prefix, '')}.js`;
     if(!fs.existsSync('./commands/' + file_name)) return undefined;
