@@ -11,7 +11,7 @@ module.exports = {
                 const GIF = await neko.sfw.cuddle();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
-                .setTitle(`${message.author.tag} обнимает самого(у) себя`)
+                .setTitle(`${message.author.tag} ты такой(ая) мягенький(ая)`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }

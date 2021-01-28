@@ -11,7 +11,7 @@ module.exports = {
                 const GIF = await neko.sfw.tickle();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
-                .setTitle(`${message.author.tag} щекочет самого(у) себя`)
+                .setTitle(`${message.author.tag} Боишься щекотки?`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }

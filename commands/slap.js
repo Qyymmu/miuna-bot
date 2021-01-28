@@ -11,7 +11,7 @@ module.exports = {
                 const GIF = await neko.sfw.slap();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
-                .setTitle(`${message.author.tag} ударил(а) самого(у) себя`)
+                .setTitle(`${message.author.tag} не обижай меня!`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }

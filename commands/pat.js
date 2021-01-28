@@ -11,7 +11,7 @@ module.exports = {
                 const GIF = await neko.sfw.pat();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
-                .setTitle(`${message.author.tag} погладил(а) самого(у) себя`)
+                .setTitle(`Бот погладил ${message.author.tag}!`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
