@@ -31,7 +31,7 @@ client.on('message', async message => {
 
 client.on('message', async message => {
   if (message.content.startsWith(`${prefix2}`)) {
-    let file_name = `${message.content.split(' ')[0].replace(prefix, '')}.js`;
+    let file_name = `${message.content.split(' ')[0].replace(prefix2, '')}.js`;
     if(!fs.existsSync('./commands/' + file_name)) return undefined;
     if(fs.existsSync('./commands/' + file_name)) {
       client.commands.get(file_name.replace('.js', '')).execute(client, message);
