@@ -6,7 +6,7 @@ module.exports = {
         if (!message.guild) return;
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`ПУК ПУК`)
+            .setTitle(`КАК ТЫ ЭТО УЗНАЛ? ._.`)
             message.channel.send(embed);
             }
     }
