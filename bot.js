@@ -45,7 +45,7 @@ client.on('message', message => {
       function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
       }
-      var nbrRandom = getRandomInt(2);
+      var nbrRandom = getRandomInt(3);
       if(nbrRandom == 2){
           message.reply("Test 1")
       } else {
