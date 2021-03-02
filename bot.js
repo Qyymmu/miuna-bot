@@ -46,10 +46,14 @@ client.on('message', message => {
         return Math.floor(Math.random() * Math.floor(max));
       }
       var nbrRandom = getRandomInt(3);
-      if(nbrRandom == 2){
+      if(nbrRandom == 1){
           message.reply("Test 1")
-      } else {
-          message.reply("Test 2")
+      }
+      if(nbrRandom == 2){
+        message.reply("Test 2")
+      }
+      if(nbrRandom == 3){
+        message.reply("Test 3")
       }
   }
   })
