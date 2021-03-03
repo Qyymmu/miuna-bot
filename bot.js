@@ -40,22 +40,5 @@ client.on('message', async message => {
   }
 });
 
-client.on('message', message => {
-  if(message.content === "!roll"){
-      function getRandomInt(max) {
-        return Math.floor(Math.random() * Math.floor(max));
-      }
-      var nbrRandom = getRandomInt(3);
-      if(nbrRandom == 1){
-          message.reply("Test 1")
-      }
-      if(nbrRandom == 2){
-        message.reply("Test 2")
-      }
-      if(nbrRandom == 3){
-        message.reply("Test 3")
-      }
-  }
-  })
 
 client.login(process.env.BOT_TOKEN);

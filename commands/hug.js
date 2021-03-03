@@ -11,7 +11,8 @@ module.exports = {
                 const GIF = await neko.sfw.hug();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
-                .setTitle(`${message.author.tag} всё будет хорошо, солнышко!`)
+                .setTitle(`Обнимашки!`)
+                .setFooter(`${message.author.tag} всё будет хорошо, солнышко!`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
