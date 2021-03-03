@@ -20,11 +20,12 @@ module.exports = {
             }
             if (message.mentions.members.size !== 0) {
             async function ping() {
-            const member = message.mentions.members.first();
+            const member = message.mentions.members.all();
             const GIF = await neko.sfw.hug();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`${message.author.tag} обнял(а) ${member.user.tag}`)
+            .setTitle(`Обнимашки!`)
+            .setDescription(`${message.author.tag} обнял(а) ${member.user.tag}`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
