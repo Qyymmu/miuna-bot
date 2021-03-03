@@ -12,7 +12,7 @@ module.exports = {
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
                 .setTitle(`Обнимашки!`)
-                .setDescription(`${message.author.ping} всё будет хорошо, солнышко!`)
+                .setDescription(`@${message.author.tag} всё будет хорошо, солнышко!`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
@@ -20,13 +20,12 @@ module.exports = {
             }
             if (message.mentions.members.size !== 0) {
             async function ping() {
+            const member = message.mentions.members.first();
             const GIF = await neko.sfw.hug();
-            let botmessage = args.join(" ");
-            message.catch();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Обнимашки!`)
-            .setDescription(`${message.author.ping} обнял(а) ${message.channel.send(botmessage)}`)
+            .setDescription(`${message.author.ping} обнял(а) ${member.user.tag}`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
