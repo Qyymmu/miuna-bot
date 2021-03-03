@@ -20,7 +20,6 @@ module.exports = {
             }
             if (message.mentions.members.size !== 0) {
             async function ping() {
-            const member = message.mentions.members.first();
             const GIF = await neko.sfw.hug();
             let botmessage = args.join(" ");
             message.catch();
