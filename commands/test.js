@@ -20,12 +20,12 @@ module.exports = {
             }
             if (message.mentions.members.size !== 1) {
             async function ping() {
-            const member = message.mentions.members.first();
+            const member = message.mentions.members.all();
             const GIF = await neko.sfw.hug();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Тест!`)
-            .setFooter(`<@${message.author.id}> обнял(а) @<${member.user.id}>`)
+            .setDescription(`<@${message.author.id}> обнял(а) <@${member.user.id}>`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
