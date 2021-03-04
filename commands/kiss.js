@@ -12,7 +12,7 @@ module.exports = {
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
                 .setTitle(`Чмок!`)
-                .setDescription(`${message.author.tag} люблю тебя!`)
+                .setDescription(`<@${message.author.id}> люблю тебя!`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
@@ -25,7 +25,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Чмок!`)
-            .setDescription(`<@${message.author.id}> поцеловал(а) ${member.user.tag}`)
+            .setDescription(`<@${message.author.id}> поцеловал(а) <@${member.user.id}>`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
