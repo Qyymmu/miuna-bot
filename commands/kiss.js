@@ -11,7 +11,8 @@ module.exports = {
                 const GIF = await neko.sfw.kiss();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
-                .setTitle(`${message.author.tag} чмок!`)
+                .setTitle(`Чмок!`)
+                .setDescription(`${message.author.tag} люблю тебя!`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
@@ -23,7 +24,8 @@ module.exports = {
             const GIF = await neko.sfw.kiss();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`${message.author.tag} поцеловал(а) ${member.user.tag}`)
+            .setTitle(`Чмок!`)
+            .setDescription(`${message.author.tag} поцеловал(а) ${member.user.tag}`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }

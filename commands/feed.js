@@ -11,7 +11,8 @@ module.exports = {
                 const GIF = await neko.sfw.feed();
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
-                .setTitle(`${message.author.tag} время обеда! (:`)
+                .setTitle(`Кушатц`)
+                .setDescription(`${message.author.tag} время обеда! (:`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
@@ -23,7 +24,8 @@ module.exports = {
             const GIF = await neko.sfw.feed();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`${message.author.tag} покормил(а) ${member.user.tag}`)
+            .setTitle(`кушатц`)
+            .setDescription(`${message.author.tag} покормил(а) ${member.user.tag}`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
