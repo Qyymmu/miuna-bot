@@ -12,7 +12,7 @@ module.exports = {
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
                 .setTitle(`Щекотка!`)
-                .setDescription(`${message.author.tag} Боишься щекотки?`)
+                .setDescription(`<@${message.author.id}> Боишься щекотки?`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
@@ -25,7 +25,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Щекотка!`)
-            .setDescription(`${message.author.tag} щекочет ${member.user.tag}`)
+            .setDescription(`<@${message.author.id}> щекочет <@${member.author.id}>`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }

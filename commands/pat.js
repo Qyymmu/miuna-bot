@@ -25,7 +25,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Гладь-гладь!`)
-            .setDescription(`${message.author.tag} погладил(а) ${member.user.tag}`)
+            .setDescription(`<@${message.author.id}> погладил(а) ${member.user.tag}`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
