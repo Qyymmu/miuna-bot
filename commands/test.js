@@ -18,9 +18,9 @@ module.exports = {
             }
             no_ping();
             }
-            if (message.mentions.members.size !== 1) {
+            if (message.mentions.members.size !== 0) {
             async function ping() {
-            const member = message.mentions.members.all();
+            const member = message.mentions.members.first();
             const GIF = await neko.sfw.hug();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
