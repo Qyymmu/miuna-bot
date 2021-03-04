@@ -25,7 +25,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Щекотка!`)
-            .setDescription(`<@${message.author.id}> щекочет <@${member.author.id}>`)
+            .setDescription(`<@${message.author.id}> щекочет <@${member.user.id}>`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
