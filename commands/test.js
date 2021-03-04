@@ -12,7 +12,7 @@ module.exports = {
                 const embed = new Discord.MessageEmbed()
                 .setColor('#202225')
                 .setTitle(`Тест!`)
-                .setField(`@<${message.author.id}> всё будет хорошо, солнышко!`)
+                .setField(`<@${message.author.id}> всё будет хорошо, солнышко!`)
                 .setImage(GIF.url)
                 message.channel.send(embed);
             }
