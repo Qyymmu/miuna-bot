@@ -25,7 +25,6 @@ module.exports = {
         .addField(prefix + 'foxgirl', 'Показывает рандомное изображение/гиф лисодевочки')
         .addField(prefix + 'avatar', 'Показывает рандомный аватар')
         .addField(prefix + 'cattext', 'Показывает сообщение с котиком')
-        .addField('Если есть вопросы:', 'https://discord.gg/7eXhwtEG2X')
         message.channel.send(embed);
     }
 }
