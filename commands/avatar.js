@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const nekoclient = require('nekos.life');
 const neko = new nekoclient();
+const avatar = message.author.avatarURL
 
 module.exports = {
     name: 'avatar',
@@ -10,7 +11,7 @@ module.exports = {
             const GIF = await neko.sfw.avatar();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`Аватар <@${message.author.id}>`)
+            .setTitle(`Аватар ${message.author}`)
             .setImage(message.author.avatarURL)({ dynamic: true })
             .setFooter('Сделал Qyymmu ❤️', message.author.avatarURL({ dynamic: true }));
             message.channel.send(embed);
