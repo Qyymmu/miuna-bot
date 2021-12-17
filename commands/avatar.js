@@ -11,7 +11,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Аватар <@${message.author.id}>`)
-            .setImage(GIF.url)
+            .setImage(message.author.avatarURL)({ dynamic: true })
             message.channel.send(embed);
             }
             avatar();
