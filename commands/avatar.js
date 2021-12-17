@@ -12,6 +12,7 @@ module.exports = {
             .setColor('#202225')
             .setTitle(`Аватар <@${message.author.id}>`)
             .setImage(message.author.avatarURL)({ dynamic: true })
+            .setFooter('Сделал Qyymmu ❤️', message.author.avatarURL({ dynamic: true }));
             message.channel.send(embed);
             }
             avatar();
