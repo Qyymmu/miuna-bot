@@ -11,7 +11,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`${message.author.tag} here's a random anime avatar`)
-            .setImage(${message.author.avatar})
+            .setImage(GIF.neko)
             message.channel.send(embed);
             }
             avatar();
