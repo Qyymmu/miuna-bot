@@ -9,7 +9,7 @@ const neko = new nekoclient();
 client.on('ready', () => {
   console.log(`Bot tag: ${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
-  client.user.setActivity(`${prefix}help`, { type: 'WATCHING' });
+  client.user.setActivity(`Прекрасный голос Иччи`, { type: 'LISTENING' });
 });
 
 client.commands = new Discord.Collection();
