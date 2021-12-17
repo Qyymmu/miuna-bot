@@ -10,8 +10,8 @@ module.exports = {
             const GIF = await neko.sfw.avatar();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`${message.author.tag} here's a random anime avatar`)
-            .setImage(${message.author.avatarURL})
+            .setTitle(`${message.author.tag} вот рандомная аниме аватарка!`)
+            .setImage(GIF.url)
             message.channel.send(embed);
             }
             avatar();
