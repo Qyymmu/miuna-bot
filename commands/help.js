@@ -23,7 +23,6 @@ module.exports = {
         .addField(prefix + 'neko', 'Показывает рандомное изображение неко')
         .addField(prefix + 'nekogif', 'Показывает рандомное гиф неко')
         .addField(prefix + 'foxgirl', 'Показывает рандомное изображение/гиф лисодевочки')
-        .addField(prefix + 'avatar', 'Показывает рандомный аватар')
         .addField(prefix + 'cattext', 'Показывает сообщение с котиком')
         message.channel.send(embed);
     }
