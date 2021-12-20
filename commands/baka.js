@@ -10,7 +10,8 @@ module.exports = {
             const GIF = await neko.sfw.baka();
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`<@${message.author.id}> ты бака!`)
+            .setTitle(`Ты бака!`)
+            .setDescription(`<@$message.author.id бака бака БАКА!`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
