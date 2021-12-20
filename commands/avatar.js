@@ -13,7 +13,7 @@ module.exports = {
             const avatarEmbed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Аватарка`)
-            .setDescription(`Вот аватар пользователя <@$message.user.id>
+            .setDescription(`Вот аватар пользователя <@$message.author.id>
           　.setImage(user.avatarURL);
             message.channel.send(embed);
             }
