@@ -9,9 +9,12 @@ module.exports = {
             async function avatar() {
             const GIF = await neko.sfw.avatar();
             const embed = new Discord.MessageEmbed()
+            const user = message.mentions.users.first() || message.author;
+            const avatarEmbed = new Discord.MessageEmbed()
             .setColor('#202225')
-            .setTitle(`${message.author.tag} вот рандомная аниме аватарка!`)
-            .setImage(GIF.url)
+            .setTitle(`Аватарка`)
+            .setDescription(`Вот аватар пользователя <@$message.user.id>
+          　.setImage(user.avatarURL);
             message.channel.send(embed);
             }
             avatar();
