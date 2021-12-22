@@ -10,6 +10,7 @@ client.on('ready', () => {
   console.log(`Bot tag: ${client.user.tag}`);
   console.log(`Guilds: ${client.guilds.cache.size}`);
   client.user.setActivity(`Прекрасный голос Иччи`, { type: 'LISTENING' });
+  client.user.setStatus('idle')
 });
 
 client.commands = new Discord.Collection();
