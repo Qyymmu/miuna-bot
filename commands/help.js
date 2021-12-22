@@ -24,6 +24,6 @@ module.exports = {
         .addField(prefix + 'nekogif', 'Показывает рандомное гиф неко')
         .addField(prefix + 'foxgirl', 'Показывает рандомное изображение/гиф лисодевочки')
         .addField(prefix + 'cattext', 'Показывает сообщение с котиком')
-        message.channel.send(embed);
+        message.author.send(embed);
     }
 }
