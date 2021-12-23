@@ -11,7 +11,7 @@ module.exports = {
             const embed = new Discord.MessageEmbed()
             .setColor('#202225')
             .setTitle(`Фырк!`)
-            .setDescription(`${message.author.tag} вот тебе лисичка!`)
+            .setDescription(`<@${message.author.id}> вот тебе лисичка!`)
             .setImage(GIF.url)
             message.channel.send(embed);
             }
